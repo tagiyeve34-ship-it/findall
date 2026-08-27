@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pn_bg">#F4F7FB</color>
+    <color name="pn_surface">#FFFFFF</color>
+    <color name="pn_text">#172033</color>
+    <color name="pn_muted">#718096</color>
+    <color name="pn_primary">#176BFF</color>
+    <color name="pn_primary_soft">#EAF2FF</color>
+    <color name="pn_teal">#00A89B</color>
+    <color name="pn_teal_soft">#E7FAF7</color>
+    <color name="pn_orange">#FF8A34</color>
+    <color name="pn_orange_soft">#FFF2E8</color>
+    <color name="pn_purple">#7658FF</color>
+    <color name="pn_purple_soft">#F0EDFF</color>
+    <color name="pn_green">#18A66A</color>
+    <color name="pn_red">#E74C5B</color>
+    <color name="pn_line">#E7ECF3</color>
+    <color name="pn_nav">#FFFFFF</color>
+</resources>

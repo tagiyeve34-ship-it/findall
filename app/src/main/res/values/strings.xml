@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PanelNext</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_map">Xəritə</string>
+    <string name="nav_calls">Zənglər</string>
+    <string name="nav_zones">Zonalar</string>
+    <string name="nav_alerts">Bildirişlər</string>
+</resources>

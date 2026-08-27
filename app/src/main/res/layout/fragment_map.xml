@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#EAF0F5">
+    <org.osmdroid.views.MapView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" />
+
+    <LinearLayout android:layout_width="50dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_gravity="end|center_vertical" android:layout_marginEnd="12dp">
+        <TextView android:id="@+id/zoomIn" android:layout_width="50dp" android:layout_height="50dp" android:gravity="center" android:background="@drawable/bg_fab" android:text="+" android:textSize="26sp" android:textStyle="bold" android:textColor="@color/pn_text"/>
+        <TextView android:id="@+id/zoomOut" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="8dp" android:gravity="center" android:background="@drawable/bg_fab" android:text="−" android:textSize="26sp" android:textStyle="bold" android:textColor="@color/pn_text"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/bottomSheet" android:layout_width="match_parent" android:layout_height="430dp" android:layout_gravity="bottom" android:orientation="vertical" android:padding="18dp" android:background="@drawable/bg_map_sheet" app:behavior_peekHeight="82dp" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <View android:layout_width="42dp" android:layout_height="5dp" android:layout_gravity="center_horizontal" android:background="#D8DEE8"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="58dp" android:gravity="center_vertical">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:id="@+id/mapTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Son mövqe" android:textSize="17sp" android:textStyle="bold" android:textColor="@color/pn_text"/>
+                <TextView android:id="@+id/mapSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yüklənir…" android:textColor="@color/pn_muted" android:textSize="13sp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/batteryChip" android:layout_width="wrap_content" android:layout_height="36dp" android:gravity="center" android:paddingHorizontal="12dp" android:background="@drawable/bg_teal_soft" android:text="—%" android:textStyle="bold" android:textColor="@color/pn_teal"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/todayBtn" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="Bu gün" android:textAllCaps="false"/>
+            <Button android:id="@+id/gps24Btn" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginStart="6dp" android:text="GPS 24s" android:textAllCaps="false"/>
+            <Button android:id="@+id/myObjectBtn" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:layout_marginStart="6dp" android:text="Mən + Obyekt" android:textAllCaps="false"/>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Marşrut görünüşü" android:textStyle="bold" android:textColor="@color/pn_text"/>
+        <TextView android:id="@+id/routeInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Marşrut hesablanır…" android:textColor="@color/pn_muted"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Marker izahı" android:textStyle="bold" android:textColor="@color/pn_text"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="A — başlanğıc   •   S — son nöqtə   •   ■ — dayanacaq   •   ➜ — istiqamət" android:textColor="@color/pn_muted"/>
+        <Button android:id="@+id/externalMapBtn" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="18dp" android:background="@drawable/bg_primary_button" android:text="Seçilmiş nöqtəni xəritədə aç" android:textAllCaps="false" android:textColor="@android:color/white" android:textStyle="bold"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
